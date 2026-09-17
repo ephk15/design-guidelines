@@ -1,0 +1,17 @@
+code: m3
+name: "Material Design 3 Skills"
+description: "Stack-agnostic enforcement of Google's Material Design 3 (M3/Material You): foundations, components, patterns, adaptive deltas, plus an orchestrator and an audit for drift control."
+module_version: 1.0.0
+default_selected: false
+module_greeting: >
+  Material Design 3 Skills is ready. When building or reviewing any interface, the
+  orchestrator route is m3-orchestrator (it detects what you're working on and
+  loads only the relevant rules). For a full compliance pass on a screen or
+  project, run m3-audit — it produces a prioritized deviation list with delta
+  tracking between runs.
+
+audit_state_root:
+  prompt: "Where should m3-audit store its per-project audit state (delta/history)?"
+  default: "{project-root}/_bmad-output/m3-audits"
+  result: "{value}"
+  user_setting: false
