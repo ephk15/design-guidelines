@@ -1,0 +1,17 @@
+code: dg
+name: "Design Gesture Skills"
+description: "Craft-agnostic design orchestration: when no platform-specific system applies, it holds the line on the fundamentals (gesture, rhythm, intent) and decides between Apple HIG, Material 3, or neither — then routes the relevant skills."
+module_version: 1.0.0
+default_selected: false
+module_greeting: >
+  Design Gesture Skills is ready. When no HIG or Material 3 ruleset clearly
+  applies, the orchestrator route is dg-orchestrator — it checks whether a
+  design system is even needed first, and if so, whether hig-apple or
+  m3-material fits the product context. For a drift check on gesture/rhythm
+  fundamentals, run dg-audit.
+
+audit_state_root:
+  prompt: "Where should dg-audit store its per-project gesture audit state (delta/history)?"
+  default: "{project-root}/_bmad-output/dg-audits"
+  result: "{value}"
+  user_setting: false

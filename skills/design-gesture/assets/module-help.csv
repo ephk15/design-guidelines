@@ -1,0 +1,8 @@
+child-skill,title,summary
+dg-audit,Design Gesture Audit,Runs a compliance pass on gesture/rhythm/intent fundamentals; produces a prioritized deviation list with delta tracking between runs.
+dg-components,Design Gesture Components,Applies the craft-agnostic toolkit of components (gesture-driven primitives) when no HIG/M3 component ruleset applies.
+dg-foundations,Design Gesture Foundations,Stacks-agnostic foundation rules: gesture, rhythm, spacing, intent. The base layer independent of any design system.
+dg-orchestrator,Design Gesture Orchestrator,Detects context: decides whether HIG or Material 3 applies, or whether craft-agnostic rules are the right call, and routes to the relevant skills.
+dg-patterns,Design Gesture Patterns,Applies reusable interaction patterns shared across crafts: motion, echo, feedback loops.
+dg-platforms,Design Gesture Platforms,Applies craft-agnostic rules when no platform-specific system applies; detects platform deltas and flags when HIG/M3 should step in.
+dg-setup,Design Gesture Setup,BMAD module registration skill: merges this module's config+catalogue into BMAD v6/v7 projects. Installable as a standalone module.

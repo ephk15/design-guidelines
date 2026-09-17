@@ -1,0 +1,18 @@
+code: dg
+name: "Design Gesture"
+description: "Craft-agnostic BMAD orchestration for design-choice: detects the product context (platform, audience, craft level, medium) and decides which design system applies — Apple HIG (routes to hig), Material 3 (routes to m3), or an intentionally gesture-free bespoke system (owned here)."
+module_version: 1.0.0
+default_selected: false
+module_greeting: >
+  Design Gesture Skills is ready. The orchestrator route is dg-orchestrator —
+  it first detects what you're building (platform, medium, craft level), then
+  decides the system: HIG (delegates to hig-*), Material 3 (delegates to m3-*),
+  or a deliberately system-free gesture (applied here). For a system-choice
+  consistency pass across a product or multi-platform footprint, run dg-audit —
+  it produces a prioritized deviation list with delta tracking between runs.
+
+audit_state_root:
+  prompt: "Where should dg-audit store its per-project system-choice audit state (delta/history)?"
+  default: "{project-root}/_bmad/dg-audits"
+  result: "{value}"
+  user_setting: false
