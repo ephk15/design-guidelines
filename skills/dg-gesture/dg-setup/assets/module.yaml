@@ -1,0 +1,17 @@
+code: hig
+name: "Apple HIG Skills"
+description: "Stack-agnostic enforcement of Apple's Human Interface Guidelines: foundations, components, patterns, platform deltas, plus an orchestrator and an audit for drift control."
+module_version: 1.0.0
+default_selected: false
+module_greeting: >
+  Apple HIG Skills is ready. When building or reviewing any interface, the
+  orchestrator route is hig-orchestrator (it detects what you're working on and
+  loads only the relevant rules). For a full compliance pass on a screen or
+  project, run hig-audit — it produces a prioritized deviation list with delta
+  tracking between runs.
+
+audit_state_root:
+  prompt: "Where should hig-audit store its per-project audit state (delta/history)?"
+  default: "{project-root}/_bmad-output/hig-audits"
+  result: "{value}"
+  user_setting: false
