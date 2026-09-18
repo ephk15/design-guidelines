@@ -7,6 +7,7 @@ Ce dépôt expose 2 modules de design systèmes, packagés au format natif BMAD 
 | Module | Code | Description |
 | --- | --- | --- |
 | `skills/hig-apple/` | `hig` | **Apple HIG** — Human Interface Guidelines iOS/macOS (architect, foundations, components, patterns, platforms, audit) |
+| `skills/design-gesture/` | `dg` | **Design Gesture** — gestes de design cross-framework (fonctions, postures et patterns de gestes partagés, agnostiques de la plateforme) |
 | `skills/m3-material/` | `m3` | **Material 3** — Material Design de Google (architect, foundations, components, patterns, platforms, audit) |
 
 Chaque module suit la structure officielle d'un module BMAD : configuration native (`*-setup`) + skills de travail en frères, sous la forme installable attendue par l'installer BMAD (équivalente à `wds`, `bmb`).

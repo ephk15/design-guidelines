@@ -1,0 +1,21 @@
+# Environnements & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Sorties BMAD locales
+_bmad-output/
+*dg-audits/
+*audit_state_root*/
+*.audit-state
